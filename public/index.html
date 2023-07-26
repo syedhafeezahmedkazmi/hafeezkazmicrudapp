@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Express Routing - CRUD</title>
+        <link rel="stylesheet" href="/public/style.css">
+        <script type="module" src="/public/main.mjs"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.js"></script>
+        
+</head>
+
+<body onload="getAllPost()">
+
+
+    <h1>Express Routing CRUD App </h1>
+
+    <form class="form" onsubmit="createPost(); return false">
+
+        <h2 style="text-align: center;">Create a post:</h2>
+
+        <label for="postTitle">Title:</label>
+        <input type="text" name="postTitle" id="postTitle" placeholder="Enter Title...">
+
+        <br><br>
+        <br>
+        <label for="postText">Text:</label>
+        <input type="text" name="postText" id="postText" placeholder="Write something...">
+
+        <br>
+
+        <button id="btn" type="submit">Submit Post</button>
+
+        <br>
+        <br>
+        <br>
+    </form>
+
+    <div id="result"></div>
+    <br>
+    <br>
+    <div id="posts"></div>
+
+
+
+
+    <!-- <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"></script> -->
+
+
+</body>
+
+</html>
